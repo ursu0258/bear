@@ -75,6 +75,8 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrange, function (s
         . . c b d d d d d 5 5 5 b b . . 
         . . . c c c c c c c c b b . . . 
         `, SpriteKind.Enemy)
+    Duck.follow(carrot, 25)
+    tiles.placeOnRandomTile(Duck, sprites.dungeon.floorLight5)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
     tiles.setTileAt(location, sprites.dungeon.floorDark2)
@@ -158,7 +160,3 @@ tiles.placeOnRandomTile(carrot, myTiles.tile4)
 scene.setBackgroundColor(6)
 info.setLife(3)
 game.showLongText("Find the chest at left and get the next hint.", DialogLayout.Bottom)
-forever(function () {
-    Duck.follow(carrot)
-    tiles.placeOnRandomTile(Duck, sprites.dungeon.floorLight5)
-})
