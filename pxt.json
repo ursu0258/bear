@@ -1,22 +1,19 @@
 {
-    "name": "among us",
-    "version": "0.0.0",
-    "description": "",
+    "name": "bear",
     "dependencies": {
         "device": "*"
     },
     "files": [
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
         "README.md",
         "main.blocks",
         "main.ts",
+        "test.ts",
         "tilemap.g.jres",
         "tilemap.g.ts",
-        null
+        "tsconfig.json"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": true,
     "targetVersions": {
         "target": "1.2.9",
         "targetId": "arcade"
